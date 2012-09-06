@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/header_text" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    
+	    <LinearLayout
+	        style="@style/internal_layouts" >
+	        
+	        <Button
+	            style="@style/user_buttons"
+	            android:text="User 1" />
+	        <Button
+	            style="@style/user_buttons"
+	            android:text="User 2" />
+	        <Button
+	            style="@style/user_buttons"
+	            android:text="User 3" />
+	        <Button
+	            style="@style/user_buttons"
+	            android:text="User 4" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        style="@style/internal_layouts" >
+	        
+	        <TextView 
+	            android:text="Bienvenidos a la aplicación"
+	            style="@style/welcome"
+	            />
+	        
+	        <EditText
+	            android:id="@+id/caja_txt"
+	            style="@style/welcome_textbox" />
+	        
+	        <Button
+	            android:text="Enviar" 
+  				android:onClick="guardar"
+  				style="@style/send_button"
+	            />
+	        
+	    </LinearLayout>
+    
+    </LinearLayout>
+      
+</LinearLayout>
